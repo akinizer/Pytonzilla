@@ -4,7 +4,7 @@ import requests, bugzilla, datetime
 
 # apikey generated from user account in bugzilla
 # which is necessary for authorization of thr query access in Bugzilla Mozilla
-apikey = "tYf554cf8XujDMyt3bmzypjSjUNCavDD5quBKQsh"
+apikey = "YOUR_BUGZILLA_API_KEY_GOES_HERE"
 
 
 def printBug(bugid):
@@ -66,11 +66,11 @@ printBugs(keyword,t1,t2)
 
 # print a bug with bugid
 
-bugid = "1600646"
+bugid = "INSERT_BUG_ID_HERE"
 
 print("\n\nBug with id ",bugid,":\n",printBug(bugid))
 
 # the labels i.e 'is_confirmed' keep values of attributes, to reach them:
 
-# bugzilla.Bugzilla(url=url,api_key=apikey)['bugs']['LABELNAME'] OR
-# requests.get(url, params={'id': bugid, 'api_key': apikey})['bugs']['LABELNAME']
+# bugzilla.Bugzilla(url=url,api_key=apikey)['bugs']['INSERT_LABELNAME'] OR
+# requests.get(url, params={'id': bugid, 'api_key': apikey})['bugs']['INSERT_LABELNAME']
